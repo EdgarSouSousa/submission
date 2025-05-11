@@ -13,7 +13,7 @@ Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, p
 
 ## Decisões de Protocolos/Hardware
 
-![Esquema Completo](/imgs/hardwareProtocols.png.png "Esquema Completo")
+![Esquema Completo](/imgs/hardwareProtocols.png "Esquema Completo")
 
 ### Plataforma: ESP32
 
