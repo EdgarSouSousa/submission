@@ -19,8 +19,8 @@
 #include "BME280.h"
 
 //Wi-Fi configuration
-#define WIFI_SSID      "PontoQuente"
-#define WIFI_PASS      "qualquercoisa"
+#define WIFI_SSID      ""
+#define WIFI_PASS      ""
 #define WIFI_MAX_RETRY  5
 #define MODE WIFI_AUTH_WPA2_PSK
 
