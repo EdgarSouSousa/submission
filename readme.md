@@ -1,7 +1,5 @@
 # ESP32 Sensor to HTTP Starter
 
-Este projeto serve como ponto de partida para o desenvolvimento de firmware em plataformas ESP32 que recolhem dados via I2C e os transmitem via HTTP.
-
 ## Objetivo
 
 Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, processá-los e transmiti-los a um servidor remoto via Wi-Fi, utilizando HTTP.
