@@ -35,6 +35,8 @@ Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, p
 
 ## Arquitetura do Projeto
 
+![Esquema Tarefas e Memória](/imgs/taskAndStructure.png "Esquema Tarefas e Memória")
+
 - **Task 1**: Leitura e processamento dos dados do sensor.
 - **Task 2**: Envio assíncrono dos dados para o servidor via HTTP POST.
 - Comunicação entre tarefas feita por uma **fila (Queue)**.
@@ -42,9 +44,9 @@ Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, p
 ### jutificação da Arquitetura
 
 - Separação entre operações síncronas (I2C) e assíncronas (HTTP).
-- Uso de fila permite:
-  - Bufferização simples.
-  - Descarte automático de dados antigos quando a fila enche (dados não são críticos).
+- Uso de uma fila permite:
+  - Buffer simples.
+  - Acesso controlado entre tasks aos dados
 - Cada mensagem inclui um timestamp local:
   - Garante validade temporal dos dados.
   - Facilita análise de mensagens de erro quando enviadas pelo microcontrolador.
