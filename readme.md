@@ -25,13 +25,19 @@ Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, p
 
 - Simples de implementar e robusto.
 - Adequado para situações com baixas quantidades de sensores e dados.
-- Desvantagens como o limite de dispositivos e distancia entre microcontrolador e sensor não aplicável neste caso.
+- Desvantagens como o limite de dispositivos e distância entre microcontrolador e sensor não aplicável neste caso.
 
 ### Protocolo Wireless: HTTP sobre Wi-Fi
 
 - Utilização quase universal, não são necessárias bibliotecas externas.
 - Versatilidade permitindo controlo de erros e estruturação de dados via endpoints.
 - Protocolos como MQTT podem ser considerados exessivos para cenários com apenas um produtor e consumidor.
+
+### BME280
+
+- Utilização do protocolo I2C
+- Documentação robusta
+- Acessibilidade
 
 ## Arquitetura do Projeto
 
@@ -71,14 +77,14 @@ Desenvolver e testar firmware para recolher dados de um sensor utilizando I2C, p
 ## Como Executar
 
 ```bash
-git clone https://github.com/seu-usuario/esp32-sensor-http-starter.git
+git clone https://github.com/EdgarSouSousa/submission.git
 ```
 
 - Editar definições no header do ficheiro main.c (Wi-fi SSID, Wi-fi Password, Max retrys, auth mode).
 - Editar URL do servidor no ficheiro httpComms.h.
 - Editar Configurações I2C do ficheiro main (numero dos GPIO's).
 - Conectar BME280 ás portas designadas para I2C do ESP.
-- Connectar ESP por porta série e editar permissões
+- Conectar ESP por porta série e editar permissões
 - Executar servidor
 
 ```bash
