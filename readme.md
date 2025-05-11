@@ -91,6 +91,8 @@ git clone https://github.com/EdgarSouSousa/submission.git
 python3 server.py
 ```
 
+- Build e flash do projeto
+
 ```bash
 idf.py build
 idf.py flash
